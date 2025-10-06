@@ -24,7 +24,7 @@ In a real startup, these "small" wins handle 1K+ events/day. Contribute now, and
 ## ✨ Features (What's in the Box)
 - **FirstHTTPFunction** (`/api/myroute`): Basic "Hello World" endpoint—proves the serverless spark.  
 - **SecondHTTPFunction** (`/api/newroute?name=You`): Param-driven greeter—your API playground.  
-- **MyFirstBlobFunction**: Triggers on `newcontainer/People.csv` uploads; logs the blob deets.  
+- **MyFirstBlobFunction**: Triggers on `newcontainer/People.csv` uploads; logs the blob deets with metadata (size, last modified time) and appends to a persistent log file.  
 - **ReadFileBlobFunction**: Parses `newcontainer/People2.csv` rows—CSV-to-insights starter.  
 - V2 Model: Decorators, blueprints (via `additional_functions`), and logging baked in.  
 - Free-Tier Friendly: Runs local or Azure without breaking the bank.
@@ -106,7 +106,7 @@ This is our startup—your ideas drive it!
 **Open Issues to Claim:**  
 - [Add Error Handling for CSV Parsing](#) – Bulletproof the pipeline.  
 - [Validate API Inputs](#) – Secure the gates.  
-- [Log Blob Metadata](#) – Audit like pros.  
+- ✅ [Log Blob Metadata](#) – Audit like pros. (Completed: Now with metadata logging—check function logs!)  
 - [Timer Trigger for Auto-Logs](#) – Schedule the wins.  
 
 New ideas? Open a Discussion. Label: `good-first-issue` for newbies. Code of Conduct: Be rad, credit sources.
